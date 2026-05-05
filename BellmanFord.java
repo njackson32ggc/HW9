@@ -26,7 +26,6 @@ public class BellmanFord {
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[src] = 0;
 
-        // Relax edges V-1 times
         for (int i = 0; i < V - 1; i++) {
             for (EdgeBF e : edges) {
                 if (dist[e.src] != Integer.MAX_VALUE &&
